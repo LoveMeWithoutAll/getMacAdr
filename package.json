@@ -10,12 +10,14 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
+        "com-badrit-macaddress": "^0.2.0",
         "cordova-android": "^6.2.3",
         "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "com-badrit-macaddress": {}
         },
         "platforms": [
             "android"
