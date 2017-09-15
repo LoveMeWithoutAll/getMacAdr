@@ -40,6 +40,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        this.receiveMacAddress();
+    },
+
+    receiveMacAddress: function() {
+        window.MacAddress.getMacAddress(
+            function(macAddress) { alert(macAddress); },
+            function(fail) { alert(fail); }
+        )
     }
 };
 
